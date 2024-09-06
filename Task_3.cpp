@@ -1,10 +1,37 @@
 #include <iostream>
-#include <cmath>
+// #include <cmath>
+#include <gtest/gtest.h>
 
 using namespace std; 
 
 
+int add (int a, int b) {
+
+    return a + b; 
+}
+
+TEST (add, positive) {
+
+    ASSERT_EQ(10, add(5, 5));
+}
+
+TEST (add, negative) {
+
+    ASSERT_EQ(-10, add(-5, -5));
+}
+
+int main (int  argc, char** argv) {
+
+    ::testing::InitGoogleTest(&argc, argv);
+    RUN_ALL_TESTS();
+    return 0;
+}
+
+
+/*
 int main() {
+    int a[2] = {1, 4};
+    cout << a[5];
     double start, end, step;
     cout << "Введите начальное значение x: ";
     cin >> start; // Задаем исходное значение переменной
@@ -18,3 +45,4 @@ int main() {
     }
     return 0;
 }
+*/
