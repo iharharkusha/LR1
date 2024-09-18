@@ -1,10 +1,18 @@
 #include <iostream>
 // #include <cmath>
-#include <gtest/gtest.h>
+// #include <gtest/gtest.h>
 
 using namespace std; 
 
 
+int main () {
+    int arr[2] = {2, 4};
+
+    cout << arr[6];
+}
+
+
+/* 
 int add (int a, int b) {
 
     return a + b; 
@@ -26,6 +34,7 @@ int main (int  argc, char** argv) {
     RUN_ALL_TESTS();
     return 0;
 }
+*/
 
 
 /*
